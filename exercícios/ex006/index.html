@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script> 
+        var area = window.document.getElementById('area')
+        //sempre a variavel antes
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', saiu)
+        //substitui la no html e fica mais limpo
+
+       
+        //aqui fora o var serve pra todas as function se for dentro só serve pra uma 
+        function clicar() {
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou'
+        }
+        function saiu(){
+            area.innerText= 'Saiu'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
