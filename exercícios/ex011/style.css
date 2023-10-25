@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left, rgb(0, 128, 100) , rgb(225, 0, 255));
+}
+
+div#form{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+input#txtpais{
+    margin-bottom: 10px;
+    border-color: aqua;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <h1>Consultando Nacionalidades</h1>
+        <p>Digite abaixo o país onde você nasceu:</p>
+        <input type="text" name="txtpais" id="txtpais">
+        <input type="submit" value="CONSULTAR" onclick="consultar()">
+        <div id="res">
+
+        </div>
+    </div>   
+    <script>
+        function consultar(){
+            var txtp = window.document.getElementById('txtpais')
+            var pais = txtp.value.toLowerCase(); // Converta para letras minúsculas
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>Você nasceu no(a) ${pais}. </p>`
+            if(pais == 'brasil'){
+                res.innerHTML += `<p>Você é brasileiro(a)! </p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro(a)! </p>`
+            }
+        
+        
+        }
+    </script>
+</body>
+</html>
