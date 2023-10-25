@@ -19,10 +19,10 @@
     <script>
         function consultar(){
             var txtp = window.document.getElementById('txtpais')
-            var pais = txtp.value.toLowerCase(); // Converta para letras minúsculas
+            var pais = txtp.value.toUpperCase(); // Converta para letras maisculas
             var res = window.document.getElementById('res')
             res.innerHTML = `<p>Você nasceu no(a) ${pais}. </p>`
-            if(pais == 'brasil'){
+            if(pais == 'BRASIL'){
                 res.innerHTML += `<p>Você é brasileiro(a)! </p>`
             } else {
                 res.innerHTML += `<p>Você é estrangeiro(a)! </p>`
