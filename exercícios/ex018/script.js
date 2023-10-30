@@ -10,7 +10,7 @@ function calcular() {
     if (inicio <= fim && passo > 0) {
         var resultados = [];
         for (var i = inicio; i <= fim; i += passo) {
-            resultados.push("😃"+i);
+            resultados.push("😃"+i); // para colocar os emojis
         }
         resultadoDiv.textContent = "Resultados: " + resultados.join(', ');
     } else {
