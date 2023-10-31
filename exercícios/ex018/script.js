@@ -1,19 +1,25 @@
-var resultados = [];
+function calcular(){
+    var inicio = document.getElementById('inicio')
+    var fim = document.getElementById('ifim')
+    var passo = document.getElementById('ipasso')
+    var resultadoDiv = document.getElementById('resultadoDiv')
 
-function calcular() {
-    var inicio = parseInt(document.getElementById('inicio').value);
-    var fim = parseInt(document.getElementById('ifim').value);
-    var passo = parseInt(document.getElementById('ipasso').value);
-
-    var resultadoDiv = document.getElementById('resultadoDiv'); // Seleciona a div de resultados
-
-    if (inicio <= fim && passo > 0) {
-        var resultados = [];
-        for (var i = inicio; i <= fim; i += passo) {
-            resultados.push("😃"+i); // para colocar os emojis
-        }
-        resultadoDiv.textContent = "Resultados: " + resultados.join(', ');
+    if(inicio.value.length == 0 || passo.value.length == 0 || fim.value.length == 0){
+       resultadoDiv.innerHTML = 'Erro! Complete os dados ao lado.'
     } else {
-        resultadoDiv.textContent = "Valores inválidos.";
+        resultadoDiv.innerHTML = 'Fazendo a contagem:'
+        var i = Number(inicio.value)
+        var f = Number(fim.value)
+        var p = Number(passo.value)
+        if( i < f){//contagem crescente
+            for(var c=i ; c <= f ; c+=p ){
+            resultadoDiv.innerHTML += `${c} 👉`
+            } 
+        } else {
+            // contagem regressiva
+            for(var c = i; c>= f; c-=p){
+            resultadoDiv.innerHTML += `${c} 👉`
+            }
+        }    
     }
 }
