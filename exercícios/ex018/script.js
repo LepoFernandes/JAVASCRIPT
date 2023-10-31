@@ -7,7 +7,7 @@ function calcular(){
     if(inicio.value.length == 0 || passo.value.length == 0 || fim.value.length == 0){
        resultadoDiv.innerHTML = 'Erro! Complete os dados ao lado.'
     } else {
-        resultadoDiv.innerHTML = 'Fazendo a contagem:'
+        resultadoDiv.innerHTML = 'Fazendo a contagem:<br>'
         var i = Number(inicio.value)
         var f = Number(fim.value)
         var p = Number(passo.value)
