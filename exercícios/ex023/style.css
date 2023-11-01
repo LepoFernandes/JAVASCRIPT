@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left, rgb(255, 208, 0), rgb(111, 0, 255));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+main{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    
+}
+
+div#ini{
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 25px; 
+    margin: 25px;
+    width: 500px;
+    height: 150px;
+}
+div#tab{ 
+
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 25px; 
+    margin: 25px;
+    width: 500px;
+    height: 150px;
+}
+
+div#res{
+
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 25px; 
+    margin: 25px;
+    width: 500px;
+    height: 150px;
+}
+
+p{
+    padding: 25px;
+}
+
+select#tabnum{
+    padding: 25px;
+}
