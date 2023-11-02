@@ -11,9 +11,12 @@ function enviar(){
       var item = document.createElement('option')
       item.text = `Valor ${numero} adicionado!`
       item.value = `tab${numero}`
-      tabnum.appendChild(item)   
+      tabnum.appendChild(item)  
+      num.focus()
+      num.value=''
    } else {
       window.alert('Erro! digite algum número válido.')
+      
    }
 }   
 function finalizar(){ 
